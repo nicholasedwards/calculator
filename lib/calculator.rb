@@ -15,4 +15,8 @@ class Calculator
     "You subtracted #{number} from #{total + number}. The total is now #{total}."
   end
 
+  def clear
+    @total = 0
+  end
+
 end
