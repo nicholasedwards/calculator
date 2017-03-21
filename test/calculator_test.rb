@@ -20,4 +20,9 @@ class CalculatorTest < Minitest::Test
     assert_equal 10, calculator.total
   end
 
+  def test_subtract
+    calculator = Calculator.new
+    assert_equal "You subtracted 10 from 0. The total is now -10.", calculator.subtract(10)
+  end
+
 end
