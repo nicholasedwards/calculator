@@ -10,4 +10,9 @@ class Calculator
     "You added #{number} to #{total - number}. The total is now #{total}."
   end
 
+  def subtract(number)
+    @total -= number
+    "You subtracted #{number} from #{total + number}. The total is now #{total}."
+  end
+
 end
