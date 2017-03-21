@@ -13,4 +13,11 @@ class CalculatorTest < Minitest::Test
     assert_equal "You added 10 to 0. The total is now 10.", calculator.add(10)
   end
 
+  def test_total
+    calculator = Calculator.new
+    assert_equal 0, calculator.total
+    calculator.add(10)
+    assert_equal 10, calculator.total
+  end
+
 end
