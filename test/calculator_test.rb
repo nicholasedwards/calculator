@@ -32,7 +32,7 @@ class CalculatorTest < Minitest::Test
     assert_equal 0, calculator.total
     calculator.add(10)
     assert_equal 10, calculator.total   
-    calculator.clear
+    assert_equal "You have cleared the calculator. The total is now 0.", calculator.clear
     assert_equal 0, calculator.total 
   end
 
