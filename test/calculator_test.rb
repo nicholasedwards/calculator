@@ -8,4 +8,11 @@ class CalculatorTest < Minitest::Test
     refute_nil calculator
   end
 
+  def test_add
+    calculator = Calculator.new
+    assert_equal 0, calculator.total
+    calculator.add(10)
+    assert_equal 10, calculator.total
+  end
+
 end
