@@ -17,6 +17,7 @@ class Calculator
 
   def clear
     @total = 0
+    "You have cleared the calculator. The total is now 0."
   end
 
 end
