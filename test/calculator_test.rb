@@ -18,6 +18,8 @@ class CalculatorTest < Minitest::Test
     assert_equal 0, calculator.total
     calculator.add(10)
     assert_equal 10, calculator.total
+    calculator.subtract(5)
+    assert_equal 5, calculator.total
   end
 
   def test_subtract
