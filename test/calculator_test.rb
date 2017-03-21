@@ -5,7 +5,7 @@ class CalculatorTest < Minitest::Test
 
   def test_existence
     calculator = Calculator.new
-    refute_nil calculator
+    assert_instance_of Calculator, calculator
   end
 
   def test_add
