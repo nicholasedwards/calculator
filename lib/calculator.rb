@@ -7,6 +7,7 @@ class Calculator
 
   def add(number)
     @total += number
+    "You added #{number} to #{total - number}. The total is now #{total}."
   end
 
 end
